@@ -1,0 +1,102 @@
+/* 🌌 Full background */
+.register-page-background {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* prevents heading cutoff */
+  background: radial-gradient(circle at top, #001a33, #000);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 60px 0; /* adds top spacing for heading */
+  overflow-y: auto; /* allows scroll if needed */
+  font-family: "Poppins", sans-serif;
+}
+
+/* 🩵 Centered box */
+.register-box {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(0, 255, 255, 0.4);
+  border-radius: 18px;
+  padding: 35px 40px;
+  width: 400px;
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.2);
+  text-align: center;
+  color: #fff;
+  animation: fadeInUp 1.2s ease-in-out;
+}
+
+/* ✨ Heading glow */
+.register-box h2 {
+  margin-bottom: 25px;
+  font-size: 32px;
+  font-weight: 700;
+  color: #00eaff;
+  text-shadow: 0 0 15px #00ffff, 0 0 25px #00ccff, 0 0 35px #0099ff;
+  animation: fadeInDown 1.2s ease-in-out;
+}
+
+/* 🌐 Input styles */
+.register-box input {
+  width: 100%;
+  padding: 12px 14px;
+  margin: 10px 0;
+  border: 1px solid rgba(0, 255, 255, 0.3);
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.register-box input:focus {
+  outline: none;
+  border-color: #00eaff;
+  box-shadow: 0 0 8px #00eaff;
+}
+
+/* 🔘 Button */
+.register-box button {
+  width: 100%;
+  background: linear-gradient(135deg, #00eaff, #0088ff);
+  border: none;
+  padding: 12px;
+  margin-top: 15px;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.register-box button:hover {
+  background: linear-gradient(135deg, #00ffff, #00bfff);
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #00eaff;
+}
+
+/* 🌈 Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
