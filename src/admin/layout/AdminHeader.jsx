@@ -55,7 +55,7 @@ function AdminHeader() {
                 Home
               </Link>
 
-              <Link to="/service" className="nav-item nav-link">
+              <Link to="/customer/services" className="nav-item nav-link">
                 Services
               </Link>
 

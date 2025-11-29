@@ -67,6 +67,9 @@ function VendorHeader() {
             <Link to="/vendor/profile" className="nav-item nav-link">
               My Profile
             </Link>
+            <Link to="/vendor/booking" className="nav-item nav-link">
+              Vendor Bookings
+            </Link>
 
             <Link to="/vendor/change-password" className="nav-item nav-link">
               Change Password

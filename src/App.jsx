@@ -43,6 +43,7 @@ import ServiceProviderChangePassword from "./vendor/components/ServiceProviderCh
 import MyServices from "./vendor/components/MyServices";
 import AllProviders from "./vendor/components/AllProviders";
 import AdminViewVendors from "./admin/components/AdminViewVendors";
+import VendorBookings from "./vendor/components/VendorBookings";
 
 function App() {
   return (
@@ -89,6 +90,8 @@ function App() {
           <Route index element={<VendorDashboard />} />
             <Route path="myservices" element={<MyServices />} />
           <Route path="add-service" element={<AddServices />} />
+          <Route path="booking" element={<VendorBookings />} />
+          
           <Route path="profile" element={<AllProviders />} />
           <Route path="change-password" element={<ServiceProviderChangePassword />} />
         </Route>
